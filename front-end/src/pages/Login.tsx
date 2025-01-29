@@ -12,9 +12,11 @@ interface ILoginForm {
 export const Login: React.FC = () => {
   const { register, handleSubmit } = useForm<ILoginForm>();
   const { login, isAuthenticated } = useAuth();
+  const [clickLogar, setClickLogar] = React.useState(false);
   const navigate = useNavigate();
 
   const onSubmit = async (data: ILoginForm) => {
+    if (data.email.length > 0 && data.password.length) setClickLogar(true);
     await login(data.email, data.password);
     console.log(data.email, "e ", data.password);
   };
@@ -49,7 +51,13 @@ export const Login: React.FC = () => {
               className="bg-[#EEEEEE] h-12 w-full rounded-lg p-2"
             />
           </div>
-
+          {clickLogar && (
+            <div>
+              <span className="text-sm font-light text-red-400">
+                Email ou senha incorretos. Tente Novamente
+              </span>
+            </div>
+          )}
           <Button txtButton="Entrar" widthButton="w-full" />
         </form>
         <div className="absolute min-xl:mt-[48%] mt-[60%] max-md:mt-[150%] font-light">
