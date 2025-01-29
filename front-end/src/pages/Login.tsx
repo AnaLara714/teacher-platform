@@ -38,7 +38,7 @@ export const Login: React.FC = () => {
             <input
               {...register("email")}
               type="email"
-              className="bg-[#EEEEEE] h-12 w-full rounded-lg"
+              className="bg-[#EEEEEE] h-12 w-full rounded-lg p-2"
             />
           </div>
           <div className="flex flex-col justify-items-start mb-6">
@@ -46,9 +46,10 @@ export const Login: React.FC = () => {
             <input
               {...register("password")}
               type="password"
-              className="bg-[#EEEEEE] h-12 w-full rounded-lg"
+              className="bg-[#EEEEEE] h-12 w-full rounded-lg p-2"
             />
           </div>
+
           <Button txtButton="Entrar" widthButton="w-full" />
         </form>
         <div className="absolute min-xl:mt-[48%] mt-[60%] max-md:mt-[150%] font-light">
