@@ -14,9 +14,11 @@ export const Header = () => {
   }, [isAuthenticated, navigate]);
 
   return (
-    <div>
-      <h3>CODETECH</h3>
-      <button onClick={() => logoutHandler()}>Sair</button>
+    <div className="bg-[#D64B14] font-poppins text-white flex flex-row justify-between h-16 items-center pl-14 pr-8">
+      <h3 className="font-extrabold text-4xl">CODETECH</h3>
+      <button className="cursor-pointer" onClick={() => logoutHandler()}>
+        Sair
+      </button>
     </div>
   );
 };
