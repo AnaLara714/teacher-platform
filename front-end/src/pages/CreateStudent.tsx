@@ -49,6 +49,7 @@ export const CreateStudent: React.FC = () => {
                 <input
                   {...register("age")}
                   type="number"
+                  min="0"
                   className="bg-[#EEEEEE] rounded-lg h-12 w-[153px] p-2"
                 />
               </div>
@@ -58,6 +59,7 @@ export const CreateStudent: React.FC = () => {
               <input
                 {...register("studentClass")}
                 type="number"
+                min="0"
                 className="bg-[#EEEEEE] rounded-lg h-12 w-[514px] p-2"
               />
             </div>
