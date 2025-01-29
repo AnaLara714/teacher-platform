@@ -34,7 +34,6 @@ export const StudentList: React.FC = () => {
             onClickButton={() => navigate("/create-student")}
           />
         </div>
-        {/* <div> */}
         <ul className="flex flex-col justify-center items-stretch w-full mt-0 mb-0 ml-auto mr-auto">
           {students.length === 0 ? (
             <span className="text-center mt-[30%]">
@@ -75,7 +74,6 @@ export const StudentList: React.FC = () => {
             </div>
           )}
         </ul>
-        {/* </div> */}
       </div>
     </div>
   );
