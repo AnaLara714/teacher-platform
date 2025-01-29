@@ -41,7 +41,7 @@ export const StudentList: React.FC = () => {
             </span>
           ) : (
             <div className="flex flex-col w-full mt-10 justify-around">
-              <div className="grid grid-cols-4 items-center justify-center bg-[#EEEEEE] w-full rounded-lg h-12 text-center gap-16">
+              <div className="grid grid-cols-4 items-center justify-center bg-[#EEEEEE] w-full rounded-lg h-12 text-center gap-16 max-[769px]:gap-2">
                 <span>nome</span>
                 <span>idade</span>
                 <span>turma</span>
@@ -50,7 +50,7 @@ export const StudentList: React.FC = () => {
               {students.map((student) => (
                 <li
                   key={student._id}
-                  className="grid grid-cols-4 items-center justify-center text-center w-full gap-16 h-12 mt-4"
+                  className="grid grid-cols-4 items-center justify-center text-center w-full gap-16 h-12 mt-4 max-[769px]:gap-2"
                 >
                   <span> {student.name} </span>
                   <span> {student.age}</span>
