@@ -48,7 +48,7 @@ export const CreateStudent: React.FC = () => {
                 <label className="font-light text-sm">idade</label>
                 <input
                   {...register("age")}
-                  type="text"
+                  type="number"
                   className="bg-[#EEEEEE] rounded-lg h-12 w-[153px] p-2"
                 />
               </div>
