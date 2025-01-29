@@ -41,3 +41,16 @@ Plataforma de login de professor e cadastro de alunos
     	cd front-end
     	npm install
     	npm run dev
+
+### Rotas
+
+- Front-end:
+  - http://localhost:5173/ => tela de login
+  - http://localhost:5173/students => tela pós login
+  - http://localhost:5173/create-student => tela de criar o aluno
+- Back-end:
+  - http://localhost:3000/auth/register => criar o usuário (post - email e senha no body)
+  - http://localhost:3000/auth/login => loga o usuário (post - email e senha no body)
+  - http://localhost:3000/students/ => lista os alunos (get)
+  - http://localhost:3000/students/ => cria o aluno (post)
+  - http://localhost:3000/students/delete/:id => deleta o aluno (delete)
